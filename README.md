@@ -11,9 +11,6 @@ Home
 Home dropdown
 ![alt tag] (Screenshots/Home_dropdown.png)
 
-Search
-![alt tag] (Screenshots/Home_dropdown.png)
-
 Show All
 ![alt tag] (Screenshots/Show_All.png)
 
