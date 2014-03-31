@@ -12,7 +12,7 @@ Home dropdown
 ![alt tag] (Screenshots/Home_dropdown.png)
 
 Show All
-![alt tag] (Screenshots/Show_All.png)
+![alt tag] (Screenshots/ShowAll.png)
 
 Basket
 ![alt tag] (Screenshots/Basket.png)
