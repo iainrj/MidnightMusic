@@ -1,0 +1,165 @@
+body{
+	font-family: helvetica, sans-serif;
+	background-color: #ECDFBD;
+	margin: 0;
+	padding: none;
+}
+
+header{
+	width: 100%;
+	color: #ECDFBD;
+	background-color: #3B3A35;
+	text-align: center;
+	padding-bottom: none;
+	margin-bottom: none;
+}
+
+header h1{
+	font-size: 54pt;
+	padding: none;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	background-color: #3B3A35;
+}
+
+header h2{
+	color: #ECDFBD;
+	text-align: center;
+}
+
+header h3{
+	font-size: 48pt;
+	color: #ECDFBD;
+	background-color:#5E3448;
+	padding: none;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+#header h3 a:visited{
+	color: #ECDFBD;
+	text-decoration: none;
+}
+
+#header h3 a:hover{
+	color: #62615D;
+	text-decoration: none;
+}
+
+
+header a:visited{
+	color: #978E79;
+	text-decoration: none;
+}
+
+header a:hover{
+	color:#62615D;
+}
+
+#wrapper{
+	width: 100%;
+	float: left;
+	min-width: 100%;
+	overflow: hidden;
+}
+
+#wrapper h2{
+	font-size: 20pt;
+	text-decoration: underline;
+	color: #3B3A35;
+}
+
+#contentcolumn{
+	float: fixed;
+	background-color: #ECDFBD;
+	margin: 0 18em 0 15em;
+	margin-bottom: -550px;
+	padding-bottom: 550px;
+	text-align: center;
+	text-indent: 40px;
+}
+
+table{
+	border: solid #3B3A35 2px;
+	padding-right: 25px;
+}
+
+td:first-child{
+	font-size: 17pt;
+	text-decoration: underline;
+}
+
+footer{
+	clear: both;
+	width: 100%;
+	text-align: center;
+	background-color:#3B3A35;
+	color: white;
+}
+
+footer a{
+	color: white;
+
+}
+
+footer a:visited{
+	color: white;
+}
+
+footer a:hover{
+	color: white;
+}
+
+#nav-menu ul{
+	list-style: none;
+	display: inline;
+	width: 140px;
+	font-size: 18pt;
+	list-style: none;
+	margin: 10px 0 10px;
+	padding: 0;
+}
+
+#nav-menu li{
+	height: 32pt;
+	line-height: 2em;
+	float: left;
+	width: 9em;
+	border-top: 0.1em solid #5E3448;
+	border-right: 0.1em solid #5E3448;
+	border-bottom: 0.1em solid #5E3448;
+	margin-bottom: 8px;
+	margin-top: 4px;
+	background-color: #ECDFBD;
+	color: #3B3A35;
+	text-decoration: none;
+	text-align: center;
+}
+
+#nav-menu ul li ul{
+	position: absolute;
+	left: 434px;
+	top: 276px;
+	visibility: hidden;
+}
+
+#nav-menu ul li:hover ul{
+	visibility: visible;
+}
+
+#nav-menu ul li ul li{
+	border-left: 0.1em solid #5E3448;
+	border-top: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	white-space: nowrap;
+}
+
+#nav-menu a:hover{
+	background-color: #3B3A35;
+	color: #ECDFBD;
+}

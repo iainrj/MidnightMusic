@@ -1,0 +1,113 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+ 	  <title>Feedback</title>
+ 	  <meta charset="utf-8" />
+ 	  <link rel="stylesheet" type="text/css" href="CSS/Home.css"/>
+
+ 	  <script type="text/javascript">
+		function ThankAlert(){
+			alert('Thank you for your feedback');
+		} // Function to show the user when they have added an item to their basket
+
+		function Email_Validation(){
+			var email = document.forms[0].email.value;
+			var email_pattern = new RegExp("/^(a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/");
+			if(!email.match(email)){
+				alert("Email is not valid");
+				return false;
+			}
+			ThankAlert();
+			return true; // Check the email is valid using a regex
+		}
+
+ 	  </script>
+
+</head>
+	<div id="body">
+		<body>
+
+			<div id="header">
+				<header>
+		 			<h1>Midnight Music</h1>
+		 			<h2>"The Home of Real Music"</h2>
+		 			<h3><a href="">Feedback</h3></a>
+
+		 		<nav id="nav-menu">	<!-- Navigation menu -->
+		 			<ul>
+		 				<li><a href="Home.html">Home</a></li>
+  						<li><a href="music.html">Music</a>
+  						<li><a href="./PHP/Main_PHP/show_all.php">Genres</a>
+						<ul>
+  							<li><a href="./PHP/Main_PHP/jazz.php">Jazz</a></li>
+  							<li><a href="./PHP/Main_PHP/rock.php">Rock</a></li>
+  							<li><a href="./PHP/Main_PHP/punk.php">Punk</a></li>
+  						</ul>
+  						</li>
+						<li><a href="./PHP/Main_PHP/basket.php">Basket</a></li>
+						<li><a href="./PHP/Main_PHP/Search_Music.php">Search</a></li>
+  					</ul>
+
+  				</nav>
+  				</header>
+			
+			<div id="wrapper">
+				<div id="leftcolumn_whereami">	<!-- Far left column -->
+		  		<h2>Where Am I</h2>
+		  		<ul>
+		  			<li>- Feedback</li>
+		  		</ul>
+		  		<hr>
+		  		<h2>Useful Links<h2>
+		  			<div id="useful_links">
+		  			<ul>
+		  				<li><a href="http://www.glastonburyfestivals.co.uk/">Glastonbury Festival</a></li><br/>
+		  				<li><a href="http://www.readingandleedsfestival.com/">Reading and Leeds</a></li><br/>
+		  				<li><a href="http://www.tinthepark.com/home.aspx">T in the Park</a></li><br/>
+		  				<li><a href="http://www.nme.com/">NME Magazine</a></li><br/>
+		  				<li><a href="http://www.rollingstone.com">Rolling Stone</a></li><br/>
+		  				<li><a href="http://www.ticketmaster.co.uk/">Ticketmaster</a></li>
+		  				
+		  			</ul>
+		  			</div>
+		  		</div>
+
+		  		<div id="rightcolumn_newreleases">	<!-- Far right column -->
+		  			<h2>New Releases</h2>
+					<p>New for Christmas!!</p>
+					<a href="./PHP/Main_PHP/jazz.php">
+					<img src="./Images/FrankSinatra.jpg" alt="Go to Jazz"></a>
+					<p>The Sinatra Christmas Album</p>
+					<hr>
+					<p>Releases from this year</p>
+					<a href="./PHP/Main_PHP/rock.php">
+					<img src="./Images/ArcticMonkeys.jpg" alt="Go to Rock"></a>
+					<p>AM - Arctic Monkeys</p>
+
+
+		  		</div>
+
+		  		<div id="contentcolumn">	<!-- Column for main content -->
+		  			<br/>
+		  			<form onSubmit=" return Email_Validation(this)" method="POST" enctype="text/plain">	<!-- Form to get feedback -->
+						<label for="comments">Please share your comments</label><br />
+						<br/>
+						<input type="text" name="name" placeholder="Name" required><br />
+			  			<input type="email" name="email" placeholder="Email address" required><br /><br />
+						<textarea name="comments" id="comments" cols="42" rows="10" >Enter your comments here</textarea><br /><br />
+						<input type="submit" value="Submit Your Comments" />
+					</form>
+		  			
+		  			<hr>
+
+				</div>
+		  	</div>
+
+				<div>
+		  			<footer>
+		  			<a href = "Feedback.html">Give us Feedback</a>
+		  			</footer>
+		  		<div>
+		</body>
+	</div>
+</html>

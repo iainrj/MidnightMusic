@@ -1,0 +1,60 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+ 	  <title>Update</title>
+ 	  <meta charset="utf-8" />
+ 	  <link rel="stylesheet" type="text/css" href="./CSS/Home.css"/>
+</head>
+	<div id="body">
+		<body>
+
+			<div id="header">
+				<header>
+		 			<h1>Midnight Music</h1>
+		 			<h2>"The Home of Real Music"</h2>
+		 			<h3>Update</h3>
+
+		 			<nav id="nav-menu">	<!-- Navigation menu -->
+ 					<ul>
+ 						<li><a href="Home.html">Home</a></li>
+  						<li><a href="music.html">Music</a>
+  						<li><a href="./PHP/Main_PHP/show_all.php">Genres</a>
+  						<ul>
+  							<li><a href="./PHP/Main_PHP/jazz.php">Jazz</a></li>
+  							<li><a href="./PHP/Main_PHP/rock.php">Rock</a></li>
+  							<li><a href="./PHP/Main_PHP/punk.php">Punk</a></li>
+  							<li><a href="./PHP/Main_PHP/show_all.php">Show All</a></li>
+  						</ul>
+  						</li>
+  					</ul>
+  					</nav>
+		 		</header>
+					
+			</div>
+
+			<br />
+			<br />
+			<br />
+			<br />
+
+			<form method="get" action="./PHP/Main_PHP/update.php" enctype="text/plain">	<!-- Form to input new music into catalogue -->
+			<label for="Update">Update</label><br>
+			<input type="text" name="Genre" placeholder="Genre" required ><br>
+			<input type="text" name="Artist" placeholder="Artist" required ><br>
+			<input type="text" name="Album" placeholder="Album Name" required><br>
+  			<textarea name="Description" id="Description" cols="80" rows="10" >Enter description here</textarea> <br>
+  			<input type="text" name="Image" placeholder="Image Link" ><br>
+			<input type="submit" name = "submit" value="Submit Updates" >
+			</form>
+
+
+			<div>
+		  		<footer>
+            	<a href = "Feedback.html">Give us Feedback</a>
+            	</footer>
+		  		
+		  	</div>
+
+		</body>
+	</div>
+</html>
